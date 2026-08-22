@@ -1,0 +1,151 @@
+
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+        .login-container {
+            background: white;
+            border-radius: 15px;
+            padding: 0;
+            max-width: 900px;
+            width: 100%;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        .login-banner {
+            background: #232528;
+            color: white;
+            padding: 60px 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .login-banner .icon {
+            font-size: 80px;
+            margin-bottom: 20px;
+        }
+        .login-banner h2 {
+            font-weight: 700;
+            font-size: 28px;
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+        }
+        .login-banner p {
+            opacity: 0.9;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        .login-form-container {
+            padding: 60px 40px;
+        }
+        h3 {
+            color: #232528;
+            font-weight: 700;
+            margin-bottom: 30px;
+            text-align: center;
+            font-size: 28px;
+            letter-spacing: 1px;
+        }
+        .form-group {
+            margin-bottom: 25px;
+        }
+        label {
+            font-weight: 600;
+            color: #232528;
+            margin-bottom: 8px;
+            display: block;
+            font-size: 14px;
+        }
+        .required {
+            color: #dc3545;
+        }
+        input[type="email"], input[type="password"] {
+            width: 100%;
+            padding: 12px 15px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            background: white;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+        input[type="email"]:focus, input[type="password"]:focus {
+            outline: none;
+            border-color: #232528;
+            box-shadow: 0 0 0 3px rgba(35, 37, 40, 0.1);
+        }
+        .otp-link {
+            display: block;
+            text-align: right;
+            margin-top: 8px;
+            margin-bottom: 0;
+            font-weight: normal;
+        }
+        .otp-link a {
+            color: #232528;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+        }
+        .otp-link a:hover {
+            text-decoration: underline;
+        }
+        button[type="submit"] {
+            width: 100%;
+            padding: 14px 30px;
+            font-weight: 700;
+            background: #232528;
+            border: 2px solid #232528;
+            color: white;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 14px;
+            cursor: pointer;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+        button[type="submit"]:hover {
+            background: white;
+            color: #232528;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(35, 37, 40, 0.3);
+        }
+        .text-danger {
+            font-size: 14px;
+            margin-top: 5px;
+            color: #dc3545;
+        }
+        .register-link {
+            text-align: center;
+            margin-top: 25px;
+            font-size: 14px;
+            color: #666;
+        }
+        .register-link a {
+            color: #232528;
+            font-weight: 600;
+            text-decoration: none;
+        }
+        .register-link a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .login-container {
+                grid-template-columns: 1fr;
+            }
+            .login-banner {
+                padding: 40px 30px;
+            }
+            .login-form-container {
+                padding: 40px 30px;
+            }
+        }

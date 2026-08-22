@@ -1,0 +1,157 @@
+body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+        .register-container {
+            background: white;
+            border-radius: 15px;
+            padding: 50px;
+            max-width: 600px;
+            width: 100%;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+        }
+        .header-section {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .header-icon {
+            font-size: 60px;
+            margin-bottom: 15px;
+        }
+        h3 {
+            color: #232528;
+            font-weight: 700;
+            margin-bottom: 10px;
+            font-size: 32px;
+            letter-spacing: 1px;
+        }
+        .subtitle {
+            color: #666;
+            font-size: 14px;
+        }
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        .form-group {
+            margin-bottom: 25px;
+        }
+        label {
+            font-weight: 600;
+            color: #232528;
+            margin-bottom: 8px;
+            display: block;
+            font-size: 14px;
+        }
+        .required {
+            color: #dc3545;
+        }
+        input[type="text"], input[type="email"], input[type="password"], select {
+            width: 100%;
+            padding: 12px 15px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            background: white;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+        input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus {
+            outline: none;
+            border-color: #232528;
+            box-shadow: 0 0 0 3px rgba(35, 37, 40, 0.1);
+        }
+        button[type="button"] {
+            width: 100%;
+            padding: 14px 30px;
+            font-weight: 700;
+            background: #232528;
+            border: 2px solid #232528;
+            color: white;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 14px;
+            cursor: pointer;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+        button[type="button"]:hover {
+            background: white;
+            color: #232528;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(35, 37, 40, 0.3);
+        }
+        .btn {
+            padding: 12px 30px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 14px;
+            border-radius: 6px;
+        }
+        .btn-secondary {
+            background: white;
+            border: 2px solid #232528;
+            color: #232528;
+        }
+        .btn-secondary:hover {
+            background: #232528;
+            color: white;
+        }
+        .btn-success {
+            background: #28a745;
+            border: 2px solid #28a745;
+            color: white;
+        }
+        .btn-success:hover {
+            background: white;
+            color: #28a745;
+            border: 2px solid #28a745;
+        }
+        .text-danger {
+            font-size: 14px;
+            margin-top: 5px;
+            color: #dc3545;
+        }
+        .login-link {
+            text-align: center;
+            margin-top: 25px;
+            font-size: 14px;
+            color: #666;
+        }
+        .login-link a {
+            color: #232528;
+            font-weight: 600;
+            text-decoration: none;
+        }
+        .login-link a:hover {
+            text-decoration: underline;
+        }
+        .modal-content {
+            border: 2px solid #232528;
+            border-radius: 10px;
+        }
+        .modal-body {
+            padding: 30px;
+            font-size: 16px;
+            color: #232528;
+        }
+        .modal-footer {
+            border-top: 2px solid #232528;
+            padding: 20px 30px;
+        }
+
+        @media (max-width: 768px) {
+            .register-container {
+                padding: 30px;
+            }
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+        }
